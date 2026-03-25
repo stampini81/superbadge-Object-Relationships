@@ -98,15 +98,27 @@ sf org assign permset --name Trailhead_Song_Access --target-org trailhead-org
 9. Atribuir o permission set `Trailhead_Song_Access`.
 10. Rodar novamente o `Check Challenge` no Trailhead.
 
-## Screenshots
+## Conquista
 
-Adicione as imagens finais do superbadge em `docs/images/` com estes nomes para que aparecam automaticamente neste README:
+Superbadge finalizado com sucesso no Trailhead.
 
-- `docs/images/challenge-complete.png`
-- `docs/images/superbadge-complete.png`
+Adicione as imagens finais em `docs/images/` com estes nomes para exibicao automatica no README:
 
-![Challenge Complete](docs/images/challenge-complete.png)
-![Superbadge Complete](docs/images/superbadge-complete.png)
+- `docs/images/superbadge-object-relationships-complete.png`
+- `docs/images/superbadge-badge.png`
+- `docs/images/salesforce-logo.png`
+
+### Resultado final
+
+![Superbadge Object Relationships Complete](docs/images/superbadge-object-relationships-complete.png)
+
+### Badge
+
+![Superbadge Badge](docs/images/superbadge-badge.png)
+
+### Salesforce
+
+![Salesforce Logo](docs/images/salesforce-logo.png)
 
 ## CI/CD
 
