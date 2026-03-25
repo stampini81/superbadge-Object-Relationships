@@ -38,7 +38,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          data = json.loads(Path("sfdx-project.json").read_text(encoding="utf-8"))
+          data = json.loads(Path("sfdx-project.json").read_text(encoding="utf-8-sig"))
           assert "packageDirectories" in data and data["packageDirectories"], "packageDirectories missing"
           assert data["packageDirectories"][0]["path"] == "force-app", "default package path must be force-app"
           assert "sourceApiVersion" in data, "sourceApiVersion missing"
