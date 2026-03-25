@@ -1,4 +1,6 @@
 # Superbadge Object Relationships
+![Challenge Complete](docs/images/salesforce-logo.png) ![Superbadge Complete](docs/images/superbadge-badge.png)
+
 
 ![CI](https://github.com/stampini81/superbadge-Object-Relationships/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -97,11 +99,8 @@ sf org assign permset --name Trailhead_Song_Access --target-org trailhead-org
 8. Garantir que `Song__c` tenha o relacionamento `Album__c`.
 9. Atribuir o permission set `Trailhead_Song_Access`.
 10. Rodar novamente o `Check Challenge` no Trailhead.
+![Superbadge Complete](docs/images/superbadge-object-relationships-complete.png)
 
-
-
-![Challenge Complete](docs/images/challenge-complete.png)
-![Superbadge Complete](docs/images/superbadge-complete.png)
 
 ## CI/CD
 
