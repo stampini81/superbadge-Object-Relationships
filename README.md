@@ -98,22 +98,10 @@ sf org assign permset --name Trailhead_Song_Access --target-org trailhead-org
 9. Atribuir o permission set `Trailhead_Song_Access`.
 10. Rodar novamente o `Check Challenge` no Trailhead.
 
-## Conquista
 
-Superbadge finalizado com sucesso no Trailhead.
 
-### Resultado final
-
-![Superbadge Object Relationships Complete](docs/images/superbadge-object-relationships-complete.png)
-![Superbadge Object Relationships Complete Alt](docs/images/superbadge-object-relationships-complete1.png)
-
-### Badge
-
-![Superbadge Badge](docs/images/superbadge-badge.png)
-
-### Salesforce
-
-![Salesforce Logo](docs/images/salesforce-logo.png)
+![Challenge Complete](docs/images/challenge-complete.png)
+![Superbadge Complete](docs/images/superbadge-complete.png)
 
 ## CI/CD
 
@@ -123,11 +111,7 @@ O workflow em `.github/workflows/ci.yml` valida a estrutura do repositorio em ca
 - valida XMLs principais
 - garante que o projeto DX esteja consistente para versionamento
 
-## Observacoes
 
-- este repositorio foi reduzido para focar na metadata essencial do desafio
-- os artefatos temporarios de troubleshooting foram ignorados via `.gitignore`
-- a badge de CI passa sem depender de segredos ou acesso a org Salesforce
 
 ## Autor
 
