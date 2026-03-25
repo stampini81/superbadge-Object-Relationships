@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Artist__c</fullName>
+    <label>Artist</label>
+    <referenceTo>Artist__c</referenceTo>
+    <relationshipLabel>Performs On</relationshipLabel>
+    <relationshipName>Performs_On</relationshipName>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

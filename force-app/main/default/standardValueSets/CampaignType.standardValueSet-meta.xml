@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Tour</fullName>
+        <default>false</default>
+        <label>Tour</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Show</fullName>
+        <default>false</default>
+        <label>Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Digital Show</fullName>
+        <default>false</default>
+        <label>Digital Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Interview</fullName>
+        <default>false</default>
+        <label>Interview</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Venue</fullName>
+        <default>false</default>
+        <label>Venue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  validate-repository:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f sfdx-project.json
+          test -f force-app/main/default/applications/World_Tour_Manager.app-meta.xml
+          test -f force-app/main/default/objects/Track_List__c/fields/Campaign__c.field-meta.xml
+          test -f force-app/main/default/objects/Track_List__c/fields/Song__c.field-meta.xml
+          test -f force-app/main/default/objects/Song__c/fields/Album__c.field-meta.xml
+          test -f force-app/main/default/permissionsets/Trailhead_Song_Access.permissionset-meta.xml
+
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Validate XML files
+        run: |
+          find force-app manifest .github -type f \( -name "*.xml" -o -name "*.meta.xml" \) -print0 | xargs -0 -n1 xmllint --noout
+
+      - name: Validate Salesforce project file
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("sfdx-project.json").read_text(encoding="utf-8"))
+          assert "packageDirectories" in data and data["packageDirectories"], "packageDirectories missing"
+          assert data["packageDirectories"][0]["path"] == "force-app", "default package path must be force-app"
+          assert "sourceApiVersion" in data, "sourceApiVersion missing"
+          print("sfdx-project.json OK")
+          PY

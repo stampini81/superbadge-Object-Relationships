@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Concert Venue</fullName>
+        <default>false</default>
+        <label>Concert Venue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Talent Agency</fullName>
+        <default>false</default>
+        <label>Talent Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ticket Vendor</fullName>
+        <default>false</default>
+        <label>Ticket Vendor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Studio</fullName>
+        <default>false</default>
+        <label>Studio</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>
