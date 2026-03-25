@@ -102,15 +102,10 @@ sf org assign permset --name Trailhead_Song_Access --target-org trailhead-org
 
 Superbadge finalizado com sucesso no Trailhead.
 
-Adicione as imagens finais em `docs/images/` com estes nomes para exibicao automatica no README:
-
-- `docs/images/superbadge-object-relationships-complete.png`
-- `docs/images/superbadge-badge.png`
-- `docs/images/salesforce-logo.png`
-
 ### Resultado final
 
 ![Superbadge Object Relationships Complete](docs/images/superbadge-object-relationships-complete.png)
+![Superbadge Object Relationships Complete Alt](docs/images/superbadge-object-relationships-complete1.png)
 
 ### Badge
 
